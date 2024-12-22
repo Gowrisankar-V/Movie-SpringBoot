@@ -49,7 +49,4 @@ public class Booking {
 	public void setMovieId(int movieId) {
 		this.movieId = movieId;
 	}
-	
-	
-
 }

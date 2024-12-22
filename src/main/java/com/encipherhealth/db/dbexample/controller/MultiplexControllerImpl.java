@@ -45,7 +45,11 @@ public class MultiplexControllerImpl {
 	{
 		return multiplexServiceImpl.updateSnacks(snacks,bookingId,snacksId);
 	}
-	//@DeleteMapping("/multiplex/{bookingId}/snacks/{snacksId}")
+	@DeleteMapping("/multiplex/{bookingId}/snacks/{snacksId}")
+	public void deleteSnacks(@PathVariable int bookingId,@PathVariable int snacksId)
+	{
+		multiplexServiceImpl.deleteSnacks(bookingId,snacksId);
+	}
 
 
 }

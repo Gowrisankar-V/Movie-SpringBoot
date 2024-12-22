@@ -71,4 +71,8 @@ public class MultiplexServiceImpl {
 		return snackRepository.save(snacks);
 	}
 
+	public void deleteSnacks(int bookingId, int snacksId)
+	{
+		snackRepository.deleteByBookingIdAndSnacksId(bookingId,snacksId);
+	}
 }
